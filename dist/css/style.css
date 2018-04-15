@@ -1,0 +1,252 @@
+.container {
+  width: 1000px;
+  height: 750px;
+  background: linear-gradient(to bottom, #fef9f5 50%, #1b2234);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .container {
+    width: 640px;
+    height: 100%;
+  }
+}
+.main {
+  width: 876px;
+  height: 562px;
+  background: #fafafa;
+  border: 1px solid black;
+  border-radius: 11px;
+  box-sizing: border-box;
+  display: flex;
+}
+@media (max-width: 640px) {
+  .main {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+  }
+}
+.left-aside {
+  width: 136px;
+  height: 100%;
+  background: #1f1d28;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+  position: relative;
+}
+@media (max-width: 640px) {
+  .left-aside {
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+.search {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 15px;
+  color: #6d6c72;
+}
+.search-input {
+  width: 100%;
+  height: 38px;
+  background: #1f1d28;
+  border: 1px solid black;
+  padding-left: 32px;
+  font-size: 11px;
+  font-family: HelveticaNeue;
+}
+.nav-categories,
+.nav-albums {
+  width: 100%;
+  list-style: none;
+  color: #c5c4ce;
+  margin-left: 14px;
+  font-size: 10px;
+  font-family: HelveticaNeueBold;
+  margin-top: 24px;
+}
+@media (max-width: 640px) {
+  .nav-categories,
+  .nav-albums {
+    display: none;
+  }
+}
+.nav-albums {
+  height: 130px;
+}
+ul.nav-categories a,
+ul.nav-albums a {
+  display: block;
+  text-decoration: none;
+  color: #8e8d94;
+}
+ul li {
+  margin-left: 11px;
+  font-size: 10px;
+  font-family: HelveticaNeue;
+  margin-top: 13px;
+}
+.sidebar-bottom {
+  width: 100%;
+  height: 40px;
+  background: #19181e;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+}
+@media (max-width: 640px) {
+  .sidebar-bottom {
+    display: none;
+  }
+}
+.main-content {
+  width: 740px;
+  overflow: auto;
+}
+@media (max-width: 640px) {
+  .main-content {
+    width: 100%;
+    overflow: inherit;
+  }
+}
+.social-icon {
+  top: 12px;
+  left: 14px;
+  font-size: 12px;
+  color: #bfbdbd;
+  border: 1px solid #bfbdbd;
+}
+@media (max-width: 640px) {
+  figure {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("fonts/HelveticaNeue.ttf");
+}
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("fonts/HelveticaNeueBold.ttf");
+}
+.Photosection {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 11px;
+  margin: 20px 20px 0 20px;
+}
+.Photosection-title {
+  font-size: 15.74px;
+  font-family: HelveticaNeue;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.Photosection--titleNoIcon {
+  justify-content: flex-start;
+}
+.Photosection-titleNumber {
+  font-size: 10px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  color: #bfbdbd;
+}
+.Photosection-textSocial {
+  display: flex;
+}
+.Photosection-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 13px;
+}
+@media (max-width: 640px) {
+  .Photosection-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+.Photosection-imageShadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Photosection-date {
+  height: 14px;
+  font-size: 10px;
+  font-family: HelveticaNeue;
+  color: #d4d4d4;
+}
+.Profile {
+  width: 100%;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
+  position: relative;
+}
+.Profile-image {
+  border-radius: 50%;
+}
+.Profile-text {
+  color: white;
+  font-size: 11.43px;
+  font-family: "HelveticaNeueBold";
+  line-height: 14px;
+  margin-top: 12px;
+}
+.Profile--textFiles {
+  color: #8e8d94;
+  font-family: "HelveticaNeue";
+  text-align: center;
+  line-height: 16px;
+  margin-top: 0;
+  font-size: 10px;
+}
+.Button-peoplePhoto {
+  width: 100px;
+  height: 24px;
+  background: #ea5a5a;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 11px;
+  font-family: "Helvetica Neue";
+  position: absolute;
+  top: 110px;
+  left: 18px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+* {
+  margin: 0;
+  padding: 0;
+}

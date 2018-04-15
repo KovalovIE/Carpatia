@@ -1,0 +1,138 @@
+.container {
+	width: 1000px;
+	height: 750px;
+	background: linear-gradient(to bottom, #fef9f5 50%, #1b2234);
+	margin: @margin-center;
+	.flex-center();
+
+	@media (max-width: 640px) {
+	    	width: 640px;
+	    	height: @size100;
+		}	
+}
+.main {
+	width: 876px;
+	height: 562px;
+	background: #fafafa;
+	border: @border1black;
+	border-radius: 11px;
+	box-sizing: @box-sizing;
+	display: @display-flex;
+
+	@media (max-width: 640px) {
+	    	display: @display-grid;
+	    	grid-template-rows: 1fr;
+	    	width: @size100;
+	    	height: @size100;
+		}
+}
+.left-aside {
+	width: 136px;
+	height: @size100;
+	background: #1f1d28;
+	border: @border1black;
+	border-radius: 2px;
+	box-sizing: @box-sizing;
+	border-top-left-radius: 11px;
+	border-bottom-left-radius: 11px;
+	position: @position-rel;
+
+	@media (max-width: 640px) {
+	    	height: @size100;
+	    	margin: @margin-center;
+	}
+}
+.search {
+	position: @position-rel;
+}
+.search-icon {
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	font-size: 15px;
+	color: #6d6c72;
+}
+.search-input {
+	width: @size100;
+	height: 38px;
+	background: #1f1d28;
+	border: @border1black;
+	padding-left: 32px;
+	font-size: 11px;
+  	font-family: HelveticaNeue;
+}
+.nav-categories,
+.nav-albums {
+	width: @size100;
+	list-style: none;
+	color: #c5c4ce;
+	margin-left: 14px;
+	font-size: 10px;
+  	font-family: HelveticaNeueBold;
+  	margin-top: 24px;
+
+  	@media (max-width: 640px) {
+	    	display: none;
+	}
+}
+.nav-albums {
+	height: 130px;
+}
+ul.nav-categories a,
+ul.nav-albums a {
+	display: block;
+    text-decoration: none;
+    color: #8e8d94;
+}
+ul li {
+	margin-left: 11px;
+	font-size: 10px;
+  	font-family: HelveticaNeue;
+  	margin-top: 13px;
+}
+.sidebar-bottom {
+	width: @size100;
+	height: 40px;
+	background: #19181e;
+	position: absolute;
+	bottom: 0;
+	border-bottom-left-radius: 10px;
+
+	@media (max-width: 640px) {
+	    	display: none;
+	}
+}
+.main-content {
+	width: 740px;
+	overflow: auto;
+
+	@media (max-width: 640px) {
+			width: @size100;
+	    	overflow: inherit;
+	}
+}
+.social-icon {
+	top: 12px;
+	left: 14px;
+	font-size: 12px;
+	color: #bfbdbd;
+	border: 1px solid #bfbdbd;
+}
+figure {
+	@media (max-width: 640px) {
+			display: @display-flex;
+			flex-direction: column;
+	}
+}
+
+
+
+
+@font-face {
+font-family: "HelveticaNeue"; 
+src: url("fonts/HelveticaNeue.ttf"); 
+}
+@font-face {
+font-family: "HelveticaNeueBold"; 
+src: url("fonts/HelveticaNeueBold.ttf"); 
+}

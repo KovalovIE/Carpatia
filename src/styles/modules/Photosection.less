@@ -1,0 +1,52 @@
+.Photosection {
+	display: @display-grid;
+	grid-template-rows: 1fr;
+	grid-gap: 11px;
+	margin: 20px 20px 0 20px;
+
+	&-title {
+		font-size: 15.74px;
+		font-family: HelveticaNeue;
+		display: @display-flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+		&--titleNoIcon {
+			justify-content: flex-start;
+		}
+
+	&-titleNumber {
+		font-size: 10px;
+		margin-bottom: 2px;
+		margin-left: 5px;
+		color: #bfbdbd;
+	}
+
+	&-textSocial {
+		display: @display-flex;
+	}
+
+	&-photo {
+		display: @display-grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-row-gap: 13px;
+
+		@media (max-width: 640px) {
+	    	display: @display-grid;
+	    	grid-template-columns: 1fr;
+	    	margin: @margin-center;
+		}
+	}
+
+	&-imageShadow {
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+
+	&-date {
+		height: 14px;
+		font-size: 10px;
+		font-family: HelveticaNeue;
+		color: #d4d4d4;
+	}
+}
